@@ -1,0 +1,30 @@
+/* 
+Search Component Style
+*/
+
+.searchContainer{
+  display: flex;
+}
+
+.search {
+  margin-bottom: 15px;
+  width: 90%;
+}
+.search div.input {
+  width: 100%;
+}
+.searchInput {
+  width: 100%;
+}
+
+.searchInput input{
+  width: 100%;
+  border-radius: 5px !important;
+}
+.searchSubmit {
+  cursor: pointer;
+  height: 38px;
+  margin: 0 !important;
+  background-color: #f5542c !important;
+  color: #fff !important;
+}

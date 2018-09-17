@@ -1,0 +1,10 @@
+/* 
+Custome semantic ui button with additional style
+*/
+
+.buttonAdd {
+  margin-bottom: 15px !important;
+  width: 100%;
+  background-color: #f5542c !important;
+  color: #fff !important;
+}
