@@ -6,9 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "test": "nightwatch --config nightwatch/nightwatch.json",
+    "gulp-test": "nightwatch --config nightwatch/nightwatch.json",
     "jest-test": "jest --config jest.config.js --watch --coverage",
-    "e2e-setup": "selenium-standalone install"
+    "selenium-setup": "selenium-standalone install"
   },
   "repository": {
     "type": "git",
