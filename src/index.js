@@ -1,23 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import { Provider } from "mobx-react";
-import rootstore from "./store/rootStore";
-import Container from "./components/Container";
-import styles from "./styles/app.css";
-import "./styles/search.css";
-
-// Define stores to use in our application
-const stores = {
-  rootstore: rootstore
-};
+import { stores } from "./store";
+import "./styles/app.scss";
+import Index from "./components";
 
 ReactDOM.render(
-  <div className={styles.main}>
-    {/* Use Provide from mobx to provide data from store */}
-    <Provider {...stores}>
-      <Container />
-    </Provider>
-  </div>,
-  document.getElementById("index")
+  <Provider {...stores}>
+    <Index />
+  </Provider>,
+  document.querySelector("div#index") || document.createElement("div") //For testing only
 );

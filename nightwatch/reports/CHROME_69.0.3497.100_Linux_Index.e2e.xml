@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="Index.e2e"
+    errors="0" failures="0" hostname="" id="" package="Index.e2e" skipped="0"
+    tests="1" time="16.50" timestamp="Sat, 22 Sep 2018 03:14:49 GMT">
+  
+    <testcase name="Prototyping apps" classname="Index.e2e" time="16.50" assertions="16">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

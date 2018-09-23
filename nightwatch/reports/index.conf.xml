@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="index.conf"
+    errors="1" failures="0" hostname="" id="" package="index.conf" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="Test Index Page" classname="index.conf">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -2,11 +2,11 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./public/index.html",
-  filename: "./index.html"
+  filename: "index.html"
 });
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ["babel-polyfill", "./src/index.js"],
   output: {
     path: path.resolve("dist"),
     filename: "bundled.js"
@@ -23,25 +23,21 @@ module.exports = {
               "transform-decorators-legacy",
               "transform-class-properties"
             ],
-            presets: ["es2015", "react"]
+            presets: ["env", "react"]
           }
         }
       },
       {
-        test: /\.css$/,
+        test: /\.scss/,
         use: [
           {
             loader: "style-loader"
           },
           {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
-            }
+            loader: "css-loader"
+          },
+          {
+            loader: "sass-loader"
           }
         ]
       }

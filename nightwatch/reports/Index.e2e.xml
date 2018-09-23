@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="Index.e2e"
+    errors="1" failures="0" hostname="" id="" package="Index.e2e" skipped="0"
+    tests="1" time="0.01200" timestamp="Tue, 18 Sep 2018 13:37:17 GMT">
+  
+    <testcase name="Demo test Google" classname="Index.e2e" time="0.01200" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Index E2e / Demo test Google]:
+
+  TypeError: browser.url(...).waitForElementVisible(...).setValue(...).trigger is not a function
+    at Object.Demo test Google (/home/ganggas/node_work/foreign_exchange/e2e_tests/Index.e2e.js:8:8)
+    at Module.call (/home/ganggas/node_work/foreign_exchange/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /home/ganggas/node_work/foreign_exchange/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/home/ganggas/node_work/foreign_exchange/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/home/ganggas/node_work/foreign_exchange/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/home/ganggas/node_work/foreign_exchange/node_modules/q/q.js:796:13)
+    at /home/ganggas/node_work/foreign_exchange/node_modules/q/q.js:556:49
+    at runSingle (/home/ganggas/node_work/foreign_exchange/node_modules/q/q.js:137:13)
+    at flush (/home/ganggas/node_work/foreign_exchange/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

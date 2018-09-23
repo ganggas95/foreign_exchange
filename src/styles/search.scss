@@ -1,0 +1,32 @@
+/* 
+Search Component Style
+*/
+
+.search-container {
+  display: flex;
+  .search {
+    margin-bottom: 15px;
+    width: 90%;
+  }
+  .search div.input {
+    width: 100%;
+  }
+  .search-input {
+    width: 100%;
+    div.results {
+      width: 22em !important;
+    }
+  }
+
+  .search-input input {
+    width: 100%;
+    border-radius: 5px !important;
+  }
+  .search-submit {
+    cursor: pointer;
+    height: 38px;
+    margin: 0 0 0 15px !important;
+    background-color: #f5542c !important;
+    color: #fff !important;
+  }
+}

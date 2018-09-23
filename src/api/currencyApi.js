@@ -1,20 +1,16 @@
-import { BASE_URL } from "./base";
+import { BASE_URL as BaseUrl } from "./base";
+// import CurrencyIface from "../interfaces/CurrencyIface";
 
-export function getCurrencies(callback, base = "USD") {
-  /**
-   * getCurrencies is function for get data from BASE_URL
-   * @param {function} callback
-   * @param {string} base
-   *
-   */
-  var params = new URLSearchParams({ base: base });
-  BASE_URL.search = params;
-  fetch(BASE_URL, {
-    method: "GET"
-  })
-    .then(res => res.json())
-    .then(res => {
-      callback(false, res);
-    })
-    .catch(callback(true, null));
+export default class CurrencyAPI {
+  GetCurrencies = (base = "USD") => {
+    BaseUrl.search = new URLSearchParams({ base: base });
+    return new Promise((resolve, reject) => {
+      fetch(BaseUrl, {
+        method: "GET"
+      })
+        .then(response => response.json())
+        .then(response => resolve(response))
+        .catch(() => reject(null));
+    });
+  };
 }
